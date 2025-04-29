@@ -1,0 +1,237 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  /* HERO COM FUNDO */
+.hero {
+    background-image: url('Dr.Lucas Moreira pagina de vendas.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .hero-overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .hero-texto {
+    flex: 1;
+    color: #fff;
+  }
+  
+  .hero-texto .headline {
+    font-size: 3rem;
+    color: #00e0ff;
+    font-weight: bold;
+  }
+  
+  .hero-texto .lead {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    color: #ccc;
+  }
+  
+  .hero-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-imagem img {
+  height: 80vh;           /* deixa em faixa vertical */
+  width: auto;
+  max-height: 600px;
+  object-fit: contain;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+  
+  /* MOBILE RESPONSIVO */
+  @media (max-width: 768px) {
+    .hero-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-texto .headline {
+      font-size: 2rem;
+    }
+  
+    .hero-texto .lead {
+      font-size: 1rem;
+    }
+  
+    .hero-imagem img {
+      width: 80%;
+      margin-top: 2rem;
+    }
+  }
+  
+  
+  /* HEADLINE */
+  .headline {
+    font-size: 3rem;
+    color: #00e0ff;
+    font-weight: bold;
+  }
+  
+  .lead {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    color: #ccc;
+  }
+  
+  /* VIDEO */
+  .video-section {
+    background-color: #1a1a1a;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .video-wrapper iframe {
+    width: 90%;
+    max-width: 600px;
+    border-radius: 12px;
+  }
+  
+  /* CONTEÚDO */
+  .content {
+    padding: 4rem 1rem;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .capa-container {
+    margin-top: 2rem;
+  }
+  
+  .capa-img {
+    width: 250px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 224, 255, 0.3);
+  }
+  
+  /* OFERTA */
+  .oferta {
+    background-color: #111;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-top: 2px solid #00e0ff;
+  }
+  
+  .oferta-titulo {
+    font-size: 2rem;
+    color: #00e0ff;
+  }
+  
+  .oferta-descricao {
+    font-size: 1rem;
+    color: #ccc;
+    margin: 1rem 0;
+  }
+  
+  .botao-comprar {
+    display: inline-block;
+    background-color: #00e0ff;
+    color: #000;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .botao-comprar:hover {
+    background-color: #00b2cc;
+  }
+  
+  .oferta-subtexto {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 1rem;
+  }
+  
+  /* ============================= */
+  /* RESPONSIVIDADE – MOBILE FIRST */
+  /* ============================= */
+  
+  @media (max-width: 768px) {
+    .headline {
+      font-size: 2rem;
+      padding: 0 1rem;
+    }
+  
+    .lead {
+      font-size: 1rem;
+      padding: 0 1rem;
+    }
+  
+    .video-wrapper iframe {
+      width: 100%;
+      height: 200px;
+    }
+  
+    .content h2 {
+      font-size: 1.5rem;
+    }
+  
+    .oferta-titulo {
+      font-size: 1.5rem;
+    }
+  
+    .botao-comprar {
+      width: 90%;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+  
+    .hero-img {
+      max-width: 80%;
+      margin: 2rem auto 0 auto;
+    }
+  
+    .capa-img {
+      width: 80%;
+    }
+  }
+  
