@@ -345,68 +345,68 @@ body {
     font-size: 20px;
   }
   /* PÚBLICO-ALVO */
+/* Seção Público Alvo Refinado */
 .publico-alvo {
     background-color: #1C1C1C;
     padding: 80px 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
   }
   
   .publico-container {
     background-color: #2A2A2A;
     padding: 50px 30px;
-    max-width: 800px;
+    max-width: 1000px;
     width: 100%;
     border-radius: 16px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
     color: #E0E0E0;
-    text-align: left;
+    text-align: center;
   }
   
   .publico-container h2 {
-    text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #00e0ff;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .publico-subtitulo {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 40px;
   }
   
   .publico-lista {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: left;
   }
   
-  .publico-lista li {
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 20px;
+  .item {
+    background: #1C1C1C;
+    padding: 15px 20px;
+    border-radius: 10px;
     font-size: 1.1rem;
-    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .publico-lista li::before {
-    content: '✔️';
-    position: absolute;
-    left: 0;
-    top: 0;
+  .item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 224, 255, 0.2);
+  }
+  
+  .item span {
+    font-size: 1.5rem;
     color: #00e0ff;
-    font-size: 1.2rem;
   }
   
-  .publico-final {
-    text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-  }
-  
-  .publico-final strong {
-    color: #00e0ff;
-    font-weight: bold;
-  }
-  
+  /* Botão */
   .publico-botao {
-    text-align: center;
+    margin-top: 40px;
   }
   
   .botao-comprar {
@@ -425,31 +425,18 @@ body {
     background-color: #00b2cc;
   }
   
-  /* RESPONSIVO */
+  /* Responsivo */
   @media (max-width: 768px) {
-    .publico-container {
-      padding: 40px 20px;
+    .publico-lista {
+      grid-template-columns: 1fr;
     }
   
     .publico-container h2 {
-      font-size: 1.7rem;
-    }
-  
-    .publico-lista li {
-      font-size: 1rem;
-    }
-  
-    .publico-final {
-      font-size: 1rem;
-    }
-  
-    .botao-comprar {
-      width: 90%;
-      font-size: 1rem;
-      padding: 1rem;
+      font-size: 2rem;
     }
   }
-  /* DEPOIMENTOS */
+  
+  /* DEPOIMENTOS SLIDER */
 .depoimentos {
     background-color: #1C1C1C;
     padding: 80px 20px;
@@ -461,6 +448,7 @@ body {
     max-width: 900px;
     width: 100%;
     text-align: center;
+    position: relative;
   }
   
   .depoimentos h2 {
@@ -469,12 +457,21 @@ body {
     margin-bottom: 50px;
   }
   
-  .depoimento {
+  .slider {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: none;
     background-color: #2A2A2A;
-    padding: 30px 25px;
-    margin-bottom: 30px;
+    padding: 40px 30px;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 224, 255, 0.1);
+  }
+  
+  .slide.active {
+    display: block;
   }
   
   .depoimento-texto {
@@ -488,6 +485,28 @@ body {
     font-size: 1rem;
     font-style: italic;
     color: #AAAAAA;
+  }
+  
+  /* Botões */
+  .slider-controls {
+    margin-top: 20px;
+  }
+  
+  .slider-controls button {
+    background-color: transparent;
+    border: 2px solid #00e0ff;
+    color: #00e0ff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .slider-controls button:hover {
+    background-color: #00e0ff;
+    color: #111;
   }
   
   /* RESPONSIVO */
