@@ -16,3 +16,13 @@ console.log("Página de vendas carregada.");
     slides[currentSlide].classList.add('active');
   });
 
+
+  const perguntas = document.querySelectorAll(".faq-pergunta");
+
+  perguntas.forEach((pergunta) => {
+    pergunta.addEventListener("click", () => {
+      pergunta.classList.toggle("active");
+      const resposta = pergunta.nextElementSibling;
+      resposta.classList.toggle("open");
+    });
+  });
