@@ -689,4 +689,148 @@ body {
       font-size: 1.1rem;
     }
   }
+  /* SEÇÃO: O que você vai receber */
+.receber {
+    background-color: #1C1C1C;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    color: #eee;
+  }
+  
+  .receber-container {
+    max-width: 1000px;
+    width: 100%;
+    line-height: 1.7;
+    font-size: 1.1rem;
+  }
+  
+  .receber-container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #00e0ff;
+  }
+  
+  .receber-container .introducao {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ccc;
+  }
+  
+  .subtitulo {
+    font-size: 1.7rem;
+    color: #00e0ff;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /* PILARES */
+  .pilar {
+    margin-bottom: 40px;
+    padding-left: 15px;
+    border-left: 4px solid #00e0ff;
+  }
+  
+  .pilar h4 {
+    font-size: 1.4rem;
+    color: #00e0ff;
+    margin-bottom: 10px;
+  }
+  
+  .pilar p {
+    margin-bottom: 10px;
+    color: #ccc;
+  }
+  
+  /* LISTAS GERAIS */
+  .itens {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+  
+  .itens li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .itens li::before {
+    content: "✔️";
+    position: absolute;
+    left: 0;
+    font-size: 1.1rem;
+    color: #00e0ff;
+  }
+  
+  /* RESUMO FINAL */
+  .resumo-final {
+    background-color: #2A2A2A;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 224, 255, 0.1);
+    margin-top: 40px;
+  }
+  
+  .resumo-final h3 {
+    font-size: 1.6rem;
+    color: #00e0ff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .resumo-final ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  
+  .resumo-final ul li {
+    padding-left: 30px;
+    margin-bottom: 12px;
+    position: relative;
+  }
+  
+  .resumo-final ul li::before {
+    content: "✔️";
+    position: absolute;
+    left: 0;
+    color: #00e0ff;
+    font-size: 1.1rem;
+  }
+  
+  .resumo-final .encerramento {
+    font-size: 1.3rem;
+    text-align: center;
+    color: #ccc;
+    margin-top: 20px;
+    line-height: 1.6;
+  }
+  
+  .resumo-final .encerramento strong,
+  .receber strong {
+    color: #00e0ff;
+  }
+  
+  /* RESPONSIVO */
+  @media (max-width: 768px) {
+    .receber-container h2 {
+      font-size: 2rem;
+    }
+  
+    .subtitulo {
+      font-size: 1.4rem;
+    }
+  
+    .pilar h4 {
+      font-size: 1.2rem;
+    }
+  
+    .resumo-final .encerramento {
+      font-size: 1.1rem;
+    }
+  }
   
