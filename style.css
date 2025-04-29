@@ -3,16 +3,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
   
-  body {
+body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #111;
     color: #fff;
     line-height: 1.6;
-  }
-  
-  /* HERO COM FUNDO */
+}
+
+/* HERO COM FUNDO */
 .hero {
     background-image: url('Dr.Lucas Moreira pagina de vendas.png');
     background-size: cover;
@@ -22,19 +22,18 @@
     align-items: center;
     justify-content: center;
     position: relative;
-  }
+}
   
-  .hero-overlay {
+.hero-overlay {
     width: 100%;
     height: 100%;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
   
-  
-  .hero-container {
+.hero-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,134 +41,111 @@
     width: 100%;
     padding: 2rem;
     gap: 2rem;
-  }
+}
   
-  .hero-texto {
+.hero-texto {
     flex: 1;
     color: #fff;
-  }
+}
   
-  .hero-texto .headline {
+.hero-texto .headline {
     font-size: 3rem;
     color: #00e0ff;
     font-weight: bold;
-  }
+}
   
-  .hero-texto .lead {
+.hero-texto .lead {
     font-size: 1.25rem;
     margin-top: 1rem;
     color: #ccc;
-  }
+}
   
-  .hero-imagem {
+.hero-imagem {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
   
-  .hero-imagem img {
-  height: 80vh;           /* deixa em faixa vertical */
-  width: auto;
-  max-height: 600px;
-  object-fit: contain;
-  border-radius: 0;
-  box-shadow: none;
+.hero-imagem img {
+    height: 80vh;
+    width: auto;
+    max-height: 600px;
+    object-fit: contain;
+    border-radius: 0;
+    box-shadow: none;
 }
 
-  
-  /* MOBILE RESPONSIVO */
-  @media (max-width: 768px) {
-    .hero-container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .hero-texto .headline {
-      font-size: 2rem;
-    }
-  
-    .hero-texto .lead {
-      font-size: 1rem;
-    }
-  
-    .hero-imagem img {
-      width: 80%;
-      margin-top: 2rem;
-    }
-  }
-  
-  
-  /* HEADLINE */
-  .headline {
+/* HEADLINE */
+.headline {
     font-size: 3rem;
     color: #00e0ff;
     font-weight: bold;
-  }
+}
   
-  .lead {
+.subheadline {
     font-size: 1.25rem;
     margin-top: 1rem;
     color: #ccc;
-  }
+}
   
-  /* VIDEO */
-  .video-section {
+/* VIDEO */
+.video-section {
     background-color: #1a1a1a;
     padding: 3rem 1rem;
     text-align: center;
-  }
+}
   
-  .video-wrapper iframe {
+.video-wrapper iframe {
     width: 90%;
     max-width: 600px;
     border-radius: 12px;
-  }
+}
   
-  /* CONTEÚDO */
-  .content {
+/* CONTEÚDO */
+.content {
     padding: 4rem 1rem;
     max-width: 800px;
     margin: auto;
     text-align: center;
-  }
+}
   
-  .content h2 {
+.content h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-  }
+}
   
-  .capa-container {
+.capa-container {
     margin-top: 2rem;
-  }
+}
   
-  .capa-img {
+.capa-img {
     width: 250px;
     max-width: 100%;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 224, 255, 0.3);
-  }
+}
   
-  /* OFERTA */
-  .oferta {
+/* OFERTA */
+.oferta {
     background-color: #111;
     padding: 3rem 1rem;
     text-align: center;
     border-top: 2px solid #00e0ff;
-  }
+}
   
-  .oferta-titulo {
+.oferta-titulo {
     font-size: 2rem;
     color: #00e0ff;
-  }
+}
   
-  .oferta-descricao {
+.oferta-descricao {
     font-size: 1rem;
     color: #ccc;
     margin: 1rem 0;
-  }
+}
   
-  .botao-comprar {
+.botao-comprar {
     display: inline-block;
     background-color: #00e0ff;
     color: #000;
@@ -179,59 +155,193 @@
     text-decoration: none;
     font-weight: bold;
     transition: background 0.3s ease;
-  }
+}
   
-  .botao-comprar:hover {
+.botao-comprar:hover {
     background-color: #00b2cc;
-  }
+}
   
-  .oferta-subtexto {
+.oferta-subtexto {
     font-size: 0.9rem;
     color: #777;
     margin-top: 1rem;
-  }
+}
+
+/* INTRODUÇÃO - DR LUCAS À ESQUERDA */
+.hero-introduction {
+    background-color: #0d0d0d;
+    padding: 6rem 1rem;
+    display: flex;
+    justify-content: center;
+}
   
-  /* ============================= */
-  /* RESPONSIVIDADE – MOBILE FIRST */
-  /* ============================= */
+.hero-intro-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
   
-  @media (max-width: 768px) {
-    .headline {
-      font-size: 2rem;
-      padding: 0 1rem;
+.hero-imagem-front {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.hero-imagem-front img {
+    width: 280px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 16px;
+    background-color: #111;
+    box-shadow: 0 0 20px rgba(0, 224, 255, 0.15);
+}
+  
+.hero-intro-texto {
+    flex: 2;
+    color: #eee;
+}
+  
+.hero-intro-texto h2 {
+    font-size: 2rem;
+    color: #00e0ff;
+    margin-bottom: 1rem;
+}
+  
+.hero-intro-texto p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    color: #ccc;
+}
+
+/* ============================= */
+/* RESPONSIVIDADE – MOBILE FIRST */
+/* ============================= */
+  
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-texto .headline {
+        font-size: 2rem;
     }
   
-    .lead {
-      font-size: 1rem;
-      padding: 0 1rem;
+    .hero-texto .lead {
+        font-size: 1rem;
+    }
+  
+    .hero-imagem img {
+        width: 80%;
+        margin-top: 2rem;
+    }
+  
+    .headline {
+        font-size: 2rem;
+        padding: 0 1rem;
+    }
+  
+    .subheadline {
+        font-size: 1rem;
+        padding: 0 1rem;
     }
   
     .video-wrapper iframe {
-      width: 100%;
-      height: 200px;
+        width: 100%;
+        height: 200px;
     }
   
     .content h2 {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
   
     .oferta-titulo {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
   
     .botao-comprar {
-      width: 90%;
-      padding: 1rem;
-      font-size: 1rem;
+        width: 90%;
+        padding: 1rem;
+        font-size: 1rem;
     }
   
     .hero-img {
-      max-width: 80%;
-      margin: 2rem auto 0 auto;
+        max-width: 80%;
+        margin: 2rem auto 0 auto;
     }
   
     .capa-img {
-      width: 80%;
+        width: 80%;
     }
+
+    .hero-intro-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-imagem-front img {
+        width: 70%;
+        height: auto;
+    }
+
+    .hero-intro-texto h2 {
+        font-size: 1.7rem;
+    }
+
+    .hero-intro-texto p {
+        font-size: 1rem;
+    }
+}
+.lead {
+    background-color: #1C1C1C; /* Fundo escuro geral */
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lead > div {
+    background-color: #2A2A2A; /* Box um pouco mais clara que o fundo */
+    padding: 40px 30px;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Sombra suave para destacar ainda mais */
+    color: #E0E0E0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  .lead p {
+    margin-bottom: 30px;
+  }
+  
+  .lead ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+  
+  .lead li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    font-size: 17px;
+  }
+  
+  .lead li::before {
+    content: '✔️'; /* Check personalizado */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #4DA8DA; /* Azul claro vibrante */
+    font-size: 20px;
   }
   
