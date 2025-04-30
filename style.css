@@ -223,10 +223,30 @@ body {
 /* ============================= */
   
 @media (max-width: 768px) {
-    .hero-container {
+    .hero {
+        height: auto;
+        background-position: top;
+        background-size: cover;
+        padding-top: 60px; /* opcional para afastar do topo */
+        padding-bottom: 40px;
+      }
+    
+      .hero-container {
         flex-direction: column;
+        align-items: center;
         text-align: center;
-    }
+      }
+    
+      .hero-overlay {
+        align-items: flex-start; /* empurra conteúdo para cima */
+        padding-top: 20px;
+      }
+    
+      .hero-imagem img {
+        height: auto;
+        max-height: 300px;
+        margin-top: 20px;
+      }
 
     .hero-texto .headline {
         font-size: 2rem;
@@ -833,4 +853,129 @@ body {
       font-size: 1.1rem;
     }
   }
+  .oferta {
+    background-color: #0e0e0e;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    color: #eee;
+    text-align: left;
+  }
   
+  .oferta-container {
+    max-width: 900px;
+    width: 100%;
+    line-height: 1.7;
+    font-size: 1.1rem;
+  }
+  
+  .oferta-container h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00e0ff;
+  }
+  
+  .oferta-container h3 {
+    font-size: 1.5rem;
+    margin: 40px 0 20px;
+    color: #00e0ff;
+  }
+  
+  .oferta-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ccc;
+  }
+  
+  .oferta-texto {
+    margin-bottom: 20px;
+    color: #ccc;
+  }
+  
+  .oferta-itens {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+  
+  .oferta-itens li {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .oferta-itens li::before {
+    content: "✔️";
+    position: absolute;
+    left: 0;
+    color: #00e0ff;
+  }
+  
+  .oferta-preco {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .oferta-preco .preco {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #00e0ff;
+  }
+  
+  .garantia {
+    background-color: #1b1b1b;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 224, 255, 0.1);
+    margin-top: 40px;
+  }
+  
+  .cta-final {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .cta-final p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .botao-comprar {
+    background-color: #00e0ff;
+    color: #000;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .botao-comprar:hover {
+    background-color: #00b2cc;
+  }
+  
+  @media (max-width: 768px) {
+    .oferta-container h2 {
+      font-size: 2rem;
+    }
+    .oferta-container h3 {
+      font-size: 1.3rem;
+    }
+    .oferta-preco {
+      font-size: 1.1rem;
+    }
+    .oferta-preco .preco {
+      font-size: 1.4rem;
+    }
+    .cta-final p {
+      font-size: 1rem;
+    }
+    .botao-comprar {
+      font-size: 1rem;
+      width: 90%;
+    }
+  }
