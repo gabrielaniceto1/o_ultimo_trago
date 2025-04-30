@@ -979,3 +979,44 @@ body {
       width: 90%;
     }
   }
+  .footer {
+    background-color: #0e0e0e;
+    padding: 40px 20px;
+    color: #888;
+    font-size: 13px;
+    text-align: center;
+  }
+  
+  .footer p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .footer a {
+    color: #4DA8DA;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 30px 15px;
+      font-size: 12px;
+    }
+  
+    .footer p {
+      padding: 0 10px;
+    }
+  
+    .footer a {
+      display: inline-block;
+      margin-top: 10px;
+    }
+  }
+  
