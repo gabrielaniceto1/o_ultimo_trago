@@ -2,11 +2,22 @@
 
 Este projeto é a página oficial de vendas do ebook **THE LAST DRAG** – um método baseado em neurociência e psicologia para ajudar pessoas a deixarem o cigarro.
 
-## 🔍 Sobre o Projeto
+## 🚀 Objetivo do Projeto
 
-Esta landing page foi desenvolvida com foco em performance, copywriting persuasivo e estrutura de alta conversão. Faz parte do meu portfólio como desenvolvedor e criador de produtos digitais.
+Este projeto faz parte do meu portfólio profissional como **desenvolvedor front-end** e **criador de produtos digitais**. Ele demonstra minha capacidade em estruturar páginas de alta conversão, com foco em:
 
-**⚠️ Atenção:** O conteúdo apresentado nesta página (textos, imagens, ebook, identidade visual, etc.) é protegido por direitos autorais. Esta página está disponível apenas para fins de visualização no portfólio. **Não é permitida a cópia, modificação ou reutilização do conteúdo.**
+- Escrita persuasiva (copywriting)
+- Design limpo e responsivo
+- Estrutura legal completa (termos, políticas e avisos)
+- Integração com plataformas de venda (ex: Kiwify / Hotmart)
+
+---
+
+**⚠️ Atenção:** O conteúdo apresentado nesta página (textos, imagens, ebook, identidade visual, etc.) é protegido por direitos autorais. 
+
+**Não é permitida a cópia, modificação, redistribuição ou uso comercial de nenhum elemento deste projeto sem autorização por escrito.** 
+
+Esta página está disponível apenas para fins de visualização no portfólio.
 
 ## 💡 Tecnologias utilizadas
 
