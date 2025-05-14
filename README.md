@@ -23,5 +23,5 @@ Este repositório está disponível apenas para fins demonstrativos.
 
 ---
 
-Para mais informações legais, acesse os [Termos de Uso](termos-de-uso.html) e [Política de Privacidade](politica-de-privacidade.html).
+Para mais informações legais, acesse os [Termos de Uso](termos-de-uso.txt) e [Política de Privacidade](politica-de-privacidade.txt).
 
