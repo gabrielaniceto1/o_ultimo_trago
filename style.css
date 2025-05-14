@@ -13,82 +13,84 @@ body {
 }
 
 /* HERO COM FUNDO */
-.hero {
-    background-image: url('imagens/Gabriel Aniceto - pagina de vendas.png');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-  
-.hero-overlay {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-  
-.hero-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    width: 100%;
-    padding: 2rem;
-    gap: 2rem;
-}
-  
-.hero-texto {
-    flex: 1;
-    color: #fff;
-}
-  
-.hero-texto .headline {
-    font-size: 3rem;
-    color: #00e0ff;
-    font-weight: bold;
-}
-  
-.hero-texto .lead {
-    font-size: 1.25rem;
-    margin-top: 1rem;
-    color: #ccc;
-}
-  
-.hero-imagem {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-  
-.hero-imagem img {
-    height: 80vh;
-    width: auto;
-    max-height: 600px;
-    object-fit: contain;
-    border-radius: 0;
-    box-shadow: none;
+.hero-fundo {
+  background-image: url('imagens/fundo sem eu - pagina de vendas.png');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding: 100px 20px 80px;
+  position: relative;
+  width: 100%;
+  color: #fff;
 }
 
-/* HEADLINE */
-.headline {
-    font-size: 3rem;
-    color: #00e0ff;
-    font-weight: bold;
+.hero-fundo-overlay {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.2) 100%);
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-  
-.subheadline {
-    font-size: 1.25rem;
-    margin-top: 1rem;
-    color: #ccc;
+
+.hero-fundo-texto {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
-  
+
+.hero-fundo-texto .headline {
+  font-size: 2.8rem;
+  color: #00e0ff;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-fundo-texto .subheadline {
+  font-size: 1.25rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.botao-comprar {
+  background-color: #00e0ff;
+  color: #000;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background 0.3s ease;
+  display: inline-block;
+}
+
+.botao-comprar:hover {
+  background-color: #00b2cc;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero-fundo {
+    padding: 80px 15px 60px;
+    background-position: top;
+  }
+
+  .hero-fundo-texto .headline {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+
+  .hero-fundo-texto .subheadline {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .botao-comprar {
+    width: 90%;
+    max-width: 320px;
+  }
+}
+
 /* VIDEO */
 .video-section {
     background-color: #1a1a1a;
@@ -223,54 +225,6 @@ body {
 /* ============================= */
   
 @media (max-width: 768px) {
-    .hero {
-        height: auto;
-        background-position: top;
-        background-size: cover;
-        padding-top: 60px; /* opcional para afastar do topo */
-        padding-bottom: 40px;
-      }
-    
-      .hero-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-    
-      .hero-overlay {
-        align-items: flex-start; /* empurra conteúdo para cima */
-        padding-top: 20px;
-      }
-    
-      .hero-imagem img {
-        height: auto;
-        max-height: 300px;
-        margin-top: 20px;
-      }
-
-    .hero-texto .headline {
-        font-size: 2rem;
-    }
-  
-    .hero-texto .lead {
-        font-size: 1rem;
-    }
-  
-    .hero-imagem img {
-        width: 80%;
-        margin-top: 2rem;
-    }
-  
-    .headline {
-        font-size: 2rem;
-        padding: 0 1rem;
-    }
-  
-    .subheadline {
-        font-size: 1rem;
-        padding: 0 1rem;
-    }
-  
     .video-wrapper iframe {
         width: 100%;
         height: 200px;
@@ -290,32 +244,6 @@ body {
         font-size: 1rem;
     }
   
-    .hero-img {
-        max-width: 80%;
-        margin: 2rem auto 0 auto;
-    }
-  
-    .capa-img {
-        width: 80%;
-    }
-
-    .hero-intro-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-imagem-front img {
-        width: 70%;
-        height: auto;
-    }
-
-    .hero-intro-texto h2 {
-        font-size: 1.7rem;
-    }
-
-    .hero-intro-texto p {
-        font-size: 1rem;
-    }
 }
 .lead {
     background-color: #1C1C1C; /* Fundo escuro geral */
