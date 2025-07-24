@@ -24,7 +24,37 @@ src="https://www.facebook.com/tr?id=1030277368726223&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
 </head>
 <body>
+<div class="navbar">
+    <div><strong>The Last Drag</strong></div>
+    <div class="nav-items">
+      <a href="#video">Video</a>
+      <a href="#introducao">Introdução</a>
+      <a href="#esse_metodo_e_para_voce_se">Esse metodo é para você se...</a>
+      <a href="#relatos">Relatos</a>
+      <a href="#criador">Criador do método</a>
+      <a href="#entregaveis">O que você vai receber?</a>
+      <a href="#resumo">Resumo</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="verticalbar" onclick="toggleSidebar()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
 
+  </div>
+
+  <!-- Sidebar (Mobile) -->
+  <div class="sidebar" id="sidebar">
+      <a href="#video" onclick="toggleSidebar()">Video</a>
+      <a href="#introducao" onclick="toggleSidebar()">Introdução</a>
+      <a href="#esse_metodo_e_para_voce_se" onclick="toggleSidebar()">Esse metodo é para você se...</a>
+      <a href="#relatos" onclick="toggleSidebar()">Relatos</a>
+      <a href="#criador" onclick="toggleSidebar()">Criador do método</a>
+      <a href="#entregaveis" onclick="toggleSidebar()">O que você vai receber?</a>
+      <a href="#resumo" onclick="toggleSidebar()">Resumo</a>
+      <a href="#faq" onclick="toggleSidebar()">FAQ</a>
+  </div>
 <section class="hero-fundo">
   <div class="hero-fundo-overlay">
     <div class="hero-fundo-texto">
@@ -41,7 +71,7 @@ src="https://www.facebook.com/tr?id=1030277368726223&ev=PageView&noscript=1"
 
 
   <!-- SEÇÃO DO VÍDEO -->
-  <section class="video-section">
+  <section id="video" class="video-section">
     <!-- Você pode trocar esse iframe por outro quando tiver o link -->
     <div class="video-wrapper">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/hyopKozZ9lU"
@@ -53,7 +83,7 @@ src="https://www.facebook.com/tr?id=1030277368726223&ev=PageView&noscript=1"
         <a href="https://pay.kiwify.com.br/kqGLfVp" class="botao-comprar">QUERO REPROGRAMAR MEU CÉREBRO</a>
       </div>
   </section>
-  <section class="lead">
+  <section id="introducao" class="lead">
     <div>
         <p>
             Você sabe que o cigarro está roubando sua saúde, sua energia e seus sonhos. <br>
@@ -96,7 +126,7 @@ src="https://www.facebook.com/tr?id=1030277368726223&ev=PageView&noscript=1"
     </div>
   </section>
   
-  <section class="publico-alvo">
+  <section id="esse_metodo_e_para_voce_se" class="publico-alvo">
     <div class="publico-container">
       <h2>Este método é para você se...</h2>
       <p class="publico-subtitulo">Se você se reconhece em algum desses pontos, o Último Trago pode mudar sua vida.</p>
@@ -175,7 +205,7 @@ src="https://www.facebook.com/tr?id=1030277368726223&ev=PageView&noscript=1"
   </section>
 
   
-  <section class="depoimentos">
+  <section id="relatos" class="depoimentos">
     <div class="depoimentos-container">
       <h2>Relatos</h2>
   
@@ -221,7 +251,7 @@ src="https://www.facebook.com/tr?id=1030277368726223&ev=PageView&noscript=1"
       </div>
   
       <!-- TEXTO À DIREITA -->
-      <div class="hero-intro-texto">
+      <div id="criador" class="hero-intro-texto">
         <h2>Conheça o criador do Método</h2>
         <p>Oi, eu sou Gabriel um jovem adulto de 22 anos que conheceu o cigarro aos 15. <br> <br>
             
@@ -242,7 +272,7 @@ src="https://www.facebook.com/tr?id=1030277368726223&ev=PageView&noscript=1"
   </section>
 
   
-  <section class="receber">
+  <section id="entregaveis" class="receber">
     <div class="receber-container">
       <h2>O que você vai receber ao entrar no <br> O ULTIMO TRAGO:</h2>
   
@@ -315,7 +345,7 @@ src="https://www.facebook.com/tr?id=1030277368726223&ev=PageView&noscript=1"
   
 
   <!-- OFERTA / CALL TO ACTION -->
-  <section class="oferta">
+  <section id="resumo" class="oferta">
   <div class="oferta-container">
     <h2>O ULTIMO TRAGO – O PROTOCOLO DE 21 DIAS</h2>
     <p class="oferta-intro">✨ Agora que você sabe que existe um caminho, chegou a hora de escolhê-lo.<br>
@@ -376,7 +406,7 @@ src="https://www.facebook.com/tr?id=1030277368726223&ev=PageView&noscript=1"
   </div>
 </section>
 
-  <section class="faq">
+  <section id="faq" class="faq">
     <div class="faq-container">
       <h2>Perguntas Frequentes</h2>
   

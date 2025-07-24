@@ -26,3 +26,6 @@ console.log("Página de vendas carregada.");
       resposta.classList.toggle("open");
     });
   });
+function toggleSidebar() {
+      document.getElementById('sidebar').classList.toggle('active');
+    }

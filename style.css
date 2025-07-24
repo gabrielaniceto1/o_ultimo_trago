@@ -947,4 +947,110 @@ body {
       margin-top: 10px;
     }
   }
-  
+ /* NAV DESKTOP */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #000;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      z-index: 1000;
+    }
+
+    .nav-items {
+      display: flex;
+      gap: 20px;
+    }
+
+.nav-items a,
+.sidebar a {
+  border: 1px solid #007BFF; /* azul */
+  border-radius: 8px;
+  padding: 6px 12px;
+  transition: all 0.3s ease;
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.nav-items a:hover,
+.sidebar a:hover {
+  background-color: #007BFF;
+  color: white;
+}
+
+/* Também adiciona um pequeno efeito ao ícone junto ao texto */
+.nav-items a span,
+.sidebar a span {
+  transition: transform 0.3s ease;
+}
+
+.nav-items a:hover span,
+.sidebar a:hover span {
+  transform: scale(1.1);
+}
+
+    /* HAMBURGUER - MOBILE */
+    .verticalbar {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .verticalbar span {
+      height: 3px;
+      width: 25px;
+      background: white;
+      margin-bottom: 4px;
+      border-radius: 2px;
+    }
+
+    /* SIDEBAR MOBILE */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 250px;
+      height: 100%;
+      background: #111;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 60px 20px;
+      transition: left 0.3s ease;
+      z-index: 1001;
+    }
+
+    .sidebar.active {
+      left: 0;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      margin-bottom: 20px;
+      font-size: 18px;
+      display: flex;
+      gap: 8px;
+    }
+
+    /* RESPONSIVO */
+    @media (max-width: 768px) {
+      .nav-items {
+        display: none;
+      }
+
+      .verticalbar {
+        display: flex;
+      }
+    }
+
+    section {
+      padding: 100px 20px;
+      margin-top: 60px;
+    }
