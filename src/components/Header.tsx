@@ -21,8 +21,11 @@ export function Header() {
     <header className={styles.header}>
       <div className={styles.shell}>
         <a className={styles.brand} href="#top" onClick={closeMenu} aria-label="Voltar ao topo">
-          <span className={styles.brandMain}>The Last Drag</span>
-          <span className={styles.brandSub}>O Último Trago</span>
+          <img className={styles.brandIcon} src="./icon.png" alt="" aria-hidden="true" />
+          <span className={styles.brandText}>
+            <span className={styles.brandMain}>The Last Drag</span>
+            <span className={styles.brandSub}>O Último Trago</span>
+          </span>
         </a>
 
         <nav className={styles.desktopNav} aria-label="Navegação principal">

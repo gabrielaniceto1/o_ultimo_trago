@@ -23,12 +23,30 @@
 }
 
 .brand {
+  align-items: center;
   color: var(--text);
-  display: grid;
+  display: flex;
   flex: 0 0 auto;
-  gap: 0.1rem;
-  min-width: 132px;
+  gap: 0.65rem;
+  min-width: 176px;
   text-decoration: none;
+}
+
+.brandIcon {
+  aspect-ratio: 1;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgba(0, 224, 255, 0.12);
+  flex: 0 0 auto;
+  height: 42px;
+  object-fit: cover;
+  width: 42px;
+}
+
+.brandText {
+  display: grid;
+  gap: 0.1rem;
+  min-width: 0;
 }
 
 .brandMain {
@@ -211,7 +229,13 @@
 
 @media (max-width: 420px) {
   .brand {
+    gap: 0.5rem;
     min-width: 0;
+  }
+
+  .brandIcon {
+    height: 36px;
+    width: 36px;
   }
 
   .brandMain {
