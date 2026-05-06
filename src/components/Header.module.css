@@ -1,0 +1,224 @@
+
+.header {
+  background: rgba(3, 12, 14, 0.92);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 50;
+}
+
+.shell {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  height: 72px;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding: 0 1.25rem;
+  width: 100%;
+}
+
+.brand {
+  color: var(--text);
+  display: grid;
+  flex: 0 0 auto;
+  gap: 0.1rem;
+  min-width: 132px;
+  text-decoration: none;
+}
+
+.brandMain {
+  font-size: 0.98rem;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.brandSub {
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.2;
+}
+
+.desktopNav {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  gap: 0.15rem;
+  justify-content: center;
+  min-width: 0;
+}
+
+.desktopNav a,
+.mobileNav a {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    color 160ms ease,
+    background 160ms ease,
+    border-color 160ms ease;
+}
+
+.desktopNav a {
+  border-radius: 999px;
+  padding: 0.56rem 0.7rem;
+  white-space: nowrap;
+}
+
+.desktopNav a:hover,
+.mobileNav a:hover {
+  color: var(--text);
+}
+
+.desktopNav a:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.actions {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 0.65rem;
+}
+
+.menuButton {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  color: var(--text);
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  gap: 0.28rem;
+  height: 44px;
+  justify-content: center;
+  padding: 0;
+  width: 44px;
+}
+
+.menuButton span {
+  background: currentColor;
+  border-radius: 4px;
+  display: block;
+  height: 2px;
+  width: 18px;
+}
+
+.menuButton:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.86);
+  outline-offset: 3px;
+}
+
+.backdrop {
+  background: rgba(0, 0, 0, 0.58);
+  inset: 72px 0 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  transition: opacity 180ms ease;
+  z-index: 30;
+}
+
+.backdropVisible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobileNav {
+  background: #061012;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+  display: none;
+  gap: 0.45rem;
+  max-height: calc(100vh - 96px);
+  opacity: 0;
+  overflow-y: auto;
+  padding: 0.9rem;
+  pointer-events: none;
+  position: fixed;
+  right: 1rem;
+  top: 80px;
+  transform: translateY(-8px);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+  visibility: hidden;
+  width: min(360px, calc(100vw - 2rem));
+  z-index: 40;
+}
+
+.mobileNav a {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+}
+
+.mobileNav a:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.mobileNavOpen {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+@media (max-width: 1280px) {
+  .desktopNav {
+    display: none;
+  }
+
+  .menuButton {
+    display: inline-flex;
+  }
+
+  .mobileNav {
+    display: grid;
+  }
+}
+
+@media (max-width: 720px) {
+  .shell {
+    height: 66px;
+    padding: 0 1rem;
+  }
+
+  .actions > a {
+    display: none;
+  }
+
+  .backdrop {
+    inset: 66px 0 0;
+  }
+
+  .mobileNav {
+    left: 1rem;
+    max-height: calc(100vh - 82px);
+    right: 1rem;
+    top: 74px;
+    width: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .brand {
+    min-width: 0;
+  }
+
+  .brandMain {
+    font-size: 0.88rem;
+  }
+
+  .brandSub {
+    display: none;
+  }
+}

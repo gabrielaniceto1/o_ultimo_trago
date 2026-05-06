@@ -1,0 +1,58 @@
+.videoSection {
+  background: var(--bg);
+  padding: 5.75rem 1.25rem;
+}
+
+.container {
+  display: grid;
+  gap: 1.75rem;
+  justify-items: center;
+  margin: 0 auto;
+  max-width: 920px;
+  text-align: center;
+}
+
+.copy {
+  max-width: 700px;
+}
+
+.eyebrow {
+  color: var(--accent-soft);
+  font-size: 0.86rem;
+  font-weight: 900;
+  margin: 0 0 0.7rem;
+  text-transform: uppercase;
+}
+
+.copy h2 {
+  color: var(--text);
+  font-size: 2.2rem;
+  line-height: 1.12;
+  margin: 0;
+}
+
+.videoFrame {
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 100%;
+}
+
+.videoFrame iframe {
+  border: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 760px) {
+  .videoSection {
+    padding: 4.25rem 1rem;
+  }
+
+  .copy h2 {
+    font-size: 1.75rem;
+  }
+}

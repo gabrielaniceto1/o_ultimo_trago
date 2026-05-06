@@ -1,38 +1,49 @@
-# Página de Vendas – THE LAST DRAG
+# O Último Trago
 
-Este projeto é a página oficial de vendas do ebook **THE LAST DRAG** – um método baseado em neurociência e psicologia para ajudar pessoas a deixarem o cigarro.
+Landing page de vendas do livro digital **O Último Trago / The Last Drag**, migrada para uma stack moderna com React, TypeScript e Vite.
 
-## 🚀 Objetivo do Projeto
+## Stack
 
-Este projeto faz parte do meu portfólio profissional como **desenvolvedor front-end** e **criador de produtos digitais**. Ele demonstra minha capacidade em estruturar páginas de alta conversão, com foco em:
+- React
+- TypeScript
+- Vite
+- CSS Modules
+- Deploy estático via GitHub Pages
 
-- Escrita persuasiva (copywriting)
-- Design limpo e responsivo
-- Estrutura legal completa (termos, políticas e avisos)
-- Integração com plataformas de venda (ex: Kiwify / Hotmart)
+## Estrutura principal
 
----
+```txt
+src/
+  components/      # Componentes reutilizáveis: Header, CTA, Footer
+  data/            # Copy e listas estruturadas da landing page
+  sections/        # Seções comerciais da página
+  styles/          # Estilos globais e tokens visuais
+```
 
-**⚠️ Atenção:** O conteúdo apresentado nesta página (textos, imagens, ebook, identidade visual, etc.) é protegido por direitos autorais. 
+## Como rodar localmente
 
-**Não é permitida a cópia, modificação, redistribuição ou uso comercial de nenhum elemento deste projeto sem autorização por escrito.** 
+```bash
+npm install
+npm run dev
+```
 
-Esta página está disponível apenas para fins de visualização no portfólio.
+O Vite exibirá a URL local no terminal.
 
-## 💡 Tecnologias utilizadas
+## Build de produção
 
-- HTML5
-- CSS3
-- JavaScript
-- Integração com plataformas como Kiwify / Hotmart / outros
+```bash
+npm run build
+npm run preview
+```
 
-## 📄 Licença
+O build final é gerado em `dist/`.
 
-Este repositório está disponível apenas para fins demonstrativos.  
-**Todo o conteúdo intelectual da página é de uso exclusivo do autor.**  
-**Todos os direitos reservados © 2025 Gabriel Aniceto / THE LAST DRAG.**
+## GitHub Pages
 
----
+O projeto inclui o workflow `.github/workflows/deploy.yml`, que instala dependências, gera o build com Vite e publica a pasta `dist` no GitHub Pages.
 
-Para mais informações legais, acesse os [Termos de Uso](termos-de-uso.txt) e [Política de Privacidade](politica-de-privacidade.txt).
+O domínio customizado continua em `public/CNAME`, para que o arquivo seja copiado automaticamente para o build.
 
+## Observação legal
+
+Todo o conteúdo textual, visual e intelectual desta página pertence ao autor. Este projeto está disponível apenas para fins de publicação e manutenção da página oficial.
